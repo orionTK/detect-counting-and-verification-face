@@ -1,0 +1,2 @@
+model,data,Average IOU,mAP,face
+mtcnn,DataIDFull,60.69,75.13,16106

@@ -1,0 +1,4 @@
+model,data,Average_IOU,mAP,total_data,average_time
+mobilenet_ssd,DataIDFull,68.64,87.9,13014,0.07370508169640552
+opencv,DataIDFull,37.48,51.35,13014,0.029277734608442824
+mtcnn,DataIDFull,77.7,93.67,13014,0.32108619432213376

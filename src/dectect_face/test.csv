@@ -1,0 +1,2 @@
+model,data,Average_IOU,mAP,total_data,average_time
+mobilenet_ssd,DataIDFull,70.68,90.06,31260,0.095586158462007
