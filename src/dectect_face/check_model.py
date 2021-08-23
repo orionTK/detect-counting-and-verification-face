@@ -3,16 +3,15 @@ import cv2
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 def load_image(filename):
-    face_img = load_img(filename, target_size=(224, 224))
-    face_img = img_to_array(face_img)
-    face_img.reshape(1, 224, 224, 3)
-    # face_img = cv2.resize(face_img, (224, 224), interpolation=cv2.INTER_AREA)
-    img = face_img.astype('float32')
-    # img = img - [123.68, 116.779, 103.939]
+    cropped_image = cv2.imread(filename)
+    cropped_image = cv2.resize(cropped_image, (224, 224))
+    img = cropped_image.reshape(1, 224, 224, 3)
+    # center pixel data
+    img = img.astype('float32')
     return img
 
-img = load_image('t1.jpg')
-model = load_model('final_check_people_model.h5')
+img = load_image('t_01.jpg')
+model = load_model('check_face_4.h5')
 result = model.predict(img)
 print(result[0])
 

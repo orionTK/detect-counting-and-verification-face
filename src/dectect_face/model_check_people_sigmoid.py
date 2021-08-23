@@ -86,7 +86,6 @@ def define_model_vgg():
 	model.save('check_face_4.h5')
 	opt = SGD(lr=0.001, momentum=0.9)
 	model.compile(optimizer=opt, loss='binary_crossentropy', metrics=['accuracy'])
-
 	summarize_diagnostics(history)
 
 def summarize_diagnostics(history):

@@ -10,7 +10,6 @@ import numpy as np
 from numpy import savez_compressed, load
 
 
-
 def findManhattanDistance(a, b):
 	return sum(abs(x-y) for x, y in zip(a,b))
 

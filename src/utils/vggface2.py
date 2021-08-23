@@ -1,8 +1,6 @@
-from numpy import asarray
+
 from keras_vggface.vggface import VGGFace
 from keras_vggface.utils import preprocess_input
-import numpy as np
-from numpy import expand_dims
 
 
 model = VGGFace(model='resnet50', include_top=False, input_shape=(224, 224, 3), pooling='avg')

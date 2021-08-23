@@ -29,7 +29,7 @@ class CountingFace:
         # print(result[0])
         return result[0] == 1
     def Counting(self):
-        path_model = os.path.join(os.getcwd(), 'check_face_4.h5')
+        path_model = os.path.join(os.getcwd(), 'check_face_2.h5')
         model = load_model(path_model)
         true_positive = 0.0
         total = 0.0
@@ -72,7 +72,7 @@ class CountingFace:
             if len(labels.split(" ")) > 1:
                 filename = dir + "\\" +  labels.split(" ")[0]
                 # print(filename)
-                # print((labels.split(" ")[-1]).split("\n"))
+                print((labels.split(" ")[-1]).split("\n"))
                 # TH2
                 # number_face = int((labels.split(" ")[-1]).split("\n")[0])
                 # th1
