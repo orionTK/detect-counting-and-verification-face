@@ -7,7 +7,7 @@ src/image
 src/*.txt
 src/test
 src/__pycache__
-src/Counting
+src/Image/Counting
 src/exc
 src/Label_img
 src/model
